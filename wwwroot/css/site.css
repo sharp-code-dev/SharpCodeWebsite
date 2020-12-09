@@ -76,15 +76,9 @@ html {
     margin-top: 10px;
     letter-spacing: 2px;
 }
-.text-mycolor a {
-    color: #fff;
-    font-weight: 600;
-}
 
-body {
-  /* Margin bottom by footer height */
-  
-}
+
+
 .footer {
   position: absolute;
   bottom: 0;
