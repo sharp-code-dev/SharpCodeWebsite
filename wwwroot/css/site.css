@@ -69,13 +69,109 @@ html {
   min-height: 100%;
 }
 /*Aligining Nav Elements*/
-#text-color, #text-color1, #text-color2, #text-color3 {
+#text-color, #text-color1, #text-color2, #text-color3, #text-color4{
     color: #98F5FF;
     font-size: 17px;
     padding-left: 20px;
     margin-top: 10px;
     letter-spacing: 2px;
     font-weight: bolder;
+}
+/*Aligining Nav Elements*/
+#text-color3:hover{
+    color: #98F5FF;
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+ #text-color2:hover {
+    color: #98F5FF;
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+ }
+ #text-color1:hover {
+    color: #98F5FF;
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+#text-color:hover {
+    color: #98F5FF;
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+
+#text-color3:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: #98F5FF;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+ #text-color3:hover:after {
+        width: 6%;
+        text-decoration: underline;
+     
+ }
+#text-color2:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: #98F5FF;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+#text-color2:hover:after {
+    width: 6%;
+    text-decoration: underline;
+}
+#text-color1:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: #98F5FF;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+#text-color1:hover:after {
+    width: 6%;
+    text-decoration: underline;
+}
+#text-color:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: #98F5FF;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+#text-color:hover:after {
+    width: 4%;
+    text-decoration: underline;
 }
 .border-top-color {
     border-top: 1px solid #98F5FF;
