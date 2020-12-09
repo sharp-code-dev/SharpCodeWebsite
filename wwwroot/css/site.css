@@ -71,11 +71,12 @@ html {
 /*Aligining Nav Elements*/
 #text-color, #text-color1, #text-color2, #text-color3, #text-color4{
     color: #98F5FF;
-    font-size: 17px;
-    padding-left: 20px;
+    font-size: 15px;
+    padding-left: 15px;
     margin-top: 10px;
     letter-spacing: 2px;
     font-weight: bolder;
+    text-transform: uppercase;
 }
 /*Aligining Nav Elements*/
 #text-color3:hover{
@@ -225,3 +226,117 @@ html {
     white-space: nowrap;
     line-height: 60px; /* Vertically center the text there */
 }
+/*Styling for the home Index Page*/
+.showcase-text {
+    margin-top: 60px;
+}
+.showcase-heading {
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 3px;
+}
+.exclamation-mark {
+    color: #98F5FF;
+    font-weight: 900;
+}
+.showcase-subheading {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.para1 .color-change {
+    color: #9E9EBD;
+}
+.para1 .color-change2 {
+    color: #fff;
+}
+/*Button style starting*/
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.btn-1 {
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 30px;
+    background: rgba(0,0,0,0.09);
+}
+
+.btn-2 {
+    display: block;
+    padding: 25px 80px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+.btn-1::before, .btn-1::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #98F5FF;
+}
+
+.btn-2::before, .btn-2::after {
+    content: "";
+    width: 2px;
+    height: 0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #98F5FF;
+}
+
+.btn-1:hover::before, .btn-1:hover::after {
+    width: 100%;
+}
+
+.btn-1:hover .btn-2::before, .btn-1:hover .btn-2::after {
+    height: 100%;
+}
+/*----- Showcase button  -----*/
+.btn-1::before, .btn-1::after {
+    transition-delay: 0.2s;
+}
+
+.btn-1 .btn-2::before, .btn-1 .btn-2::after {
+    transition-delay: 0s;
+}
+
+.btn-1::before {
+    right: 0;
+    top: 0;
+}
+
+.btn-1::after {
+    left: 0;
+    bottom: 0;
+}
+
+.btn-1 .btn-2::before {
+    left: 0;
+    top: 0;
+}
+
+.btn-1 .btn-2::after {
+    right: 0;
+    bottom: 0;
+}
+
+.btn-1:hover::before, .btn-1:hover::after {
+    transition-delay: 0s;
+}
+
+.btn-1:hover .btn-2::before, .btn-1:hover .btn-2::after {
+    transition-delay: 0.2s;
+}
+
+/*Button style ending*/
