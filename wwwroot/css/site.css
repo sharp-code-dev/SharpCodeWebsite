@@ -229,9 +229,17 @@ html {
     -webkit-text-fill-color: transparent;
     transform: scale(2.2);
 }
-    /*Logo*/
+    /*Logos*/
 #img-logo{
     width: 115px;
+}
+#img-logo2 {
+    width: 400px;
+    margin-top: 50px;
+}
+#img-logo3 {
+    width: 300px;
+    margin-top: 90px;
 }
 
 
@@ -618,3 +626,25 @@ ul {
     margin: 0 50px auto;
 }
 /*First column styling*/
+#heading-free {
+    margin: 100px 0 0 30px;
+}
+.heading-free {
+    font-family: 30px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+}
+#btn-11 {
+    margin-left: 100px;
+}
+#and {
+    color: #98F5FF;
+}
+#line {
+    border: 3px solid #98F5FF;
+    width: 200px;
+    font-weight: 900;
+    background-color: #FFF;
+    margin-top: 40px;
+}
