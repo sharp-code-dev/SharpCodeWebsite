@@ -234,7 +234,7 @@ html {
     width: 115px;
 }
 #img-logo2 {
-    width: 400px;
+    width: 450px;
     margin-top: 50px;
 }
 #img-logo3 {
@@ -406,16 +406,16 @@ ul {
     z-index: 1;
 }
 
-    .site-heading h4::before {
-        background: #98F5FF none repeat scroll 0 0;
-        bottom: 0;
-        content: "";
-        height: 2px;
-        left: 50%;
-        margin-left: -25px;
-        position: absolute;
-        width: 50px;
-    }
+.site-heading h4::before {
+    background: #98F5FF none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
 
 .site-heading {
     margin-bottom: 60px;
@@ -460,45 +460,45 @@ ul {
     padding: 67px 40px 64px;
 }
 
-    .we-offer-area.text-center .item i {
-        background: #98F5FF none repeat scroll 0 0;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        color: #ffffff;
-        font-size: 40px;
-        height: 80px;
-        line-height: 80px;
-        position: relative;
-        text-align: center;
-        width: 80px;
-        z-index: 1;
-        transition: all 0.35s ease-in-out;
-        -webkit-transition: all 0.35s ease-in-out;
-        -moz-transition: all 0.35s ease-in-out;
-        -ms-transition: all 0.35s ease-in-out;
-        -o-transition: all 0.35s ease-in-out;
-        margin-bottom: 25px;
-    }
+.we-offer-area.text-center .item i {
+    background: #98F5FF none repeat scroll 0 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 40px;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    text-align: center;
+    width: 80px;
+    z-index: 1;
+    transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    margin-bottom: 25px;
+}
 
-        .we-offer-area.text-center .item i::after {
-            border: 2px solid #98F5FF;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
-            content: "";
-            height: 90px;
-            left: -5px;
-            position: absolute;
-            top: -5px;
-            width: 90px;
-            z-index: -1;
-            transition: all 0.35s ease-in-out;
-            -webkit-transition: all 0.35s ease-in-out;
-            -moz-transition: all 0.35s ease-in-out;
-            -ms-transition: all 0.35s ease-in-out;
-            -o-transition: all 0.35s ease-in-out;
-        }
+.we-offer-area.text-center .item i::after {
+    border: 2px solid #98F5FF;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: "";
+    height: 90px;
+    left: -5px;
+    position: absolute;
+    top: -5px;
+    width: 90px;
+    z-index: -1;
+    transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+ }
 
 .we-offer-area.item-border-less .item {
     border: medium none;
@@ -610,18 +610,19 @@ ul {
     text-align: center;
 }
 
-    .we-offer-area.text-left .item i::after {
-        border: 2px solid #98F5FF;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        content: "";
-        height: 120px;
-        left: -10px;
-        position: absolute;
-        top: -10px;
-        width: 120px;
-    }
+.we-offer-area.text-left .item i::after {
+    border: 2px solid #98F5FF;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: "";
+    height: 120px;
+    left: -10px;
+    position: absolute;
+    top: -10px;
+    width: 120px; 
+
+}
 #container-size{
     margin: 0 50px auto;
 }
@@ -636,7 +637,9 @@ ul {
     letter-spacing: 2px;
 }
 #btn-11 {
-    margin-left: 100px;
+    margin-left: 120px;
+    width: 120px;
+    height: 70px;
 }
 #and {
     color: #98F5FF;
@@ -647,4 +650,12 @@ ul {
     font-weight: 900;
     background-color: #FFF;
     margin-top: 40px;
+}
+.btn-3 {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.btn-pattern {
+    width: 150px!important;
 }
