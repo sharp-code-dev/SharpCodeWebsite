@@ -108,5 +108,8 @@
 
         })
     }
+    //Page flip js
+    
 
-}); //end ready 
+
+});

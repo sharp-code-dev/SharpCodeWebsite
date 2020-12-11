@@ -1404,3 +1404,40 @@ ul {
         line-height: 25px;
     }
 }
+.testi-heading {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.testi-line {
+    text-align: center;
+    width: 50px;
+    font-weight: 900;
+    border: 2px solid #98F5FF;
+}
+.slide {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #98F5FF, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 8s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
