@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using SharpCodeWebsite.Models;
 
 namespace SharpCodeWebsite.Data
 {
@@ -12,5 +13,6 @@ namespace SharpCodeWebsite.Data
             : base(options)
         {
         }
+        public DbSet<SharpCodeWebsite.Models.Registration> Registration { get; set; }
     }
 }

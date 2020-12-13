@@ -35,6 +35,23 @@ namespace SharpCodeWebsite.Controllers
         {
             return View();
         }
+        public IActionResult Course()
+        {
+            return View();
+        }
+        public IActionResult Front()
+        {
+            return View();
+        }
+        public IActionResult Mobile()
+        {
+            return View();
+        }
+        public IActionResult All()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
