@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,7 @@ namespace SharpCodeWebsite.Controllers
         }
 
         // GET: Registrations
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Registration.ToListAsync());
@@ -49,6 +51,10 @@ namespace SharpCodeWebsite.Controllers
             return View();
         }
         public IActionResult Success()
+        {
+            return View();
+        }
+        public IActionResult Contact()
         {
             return View();
         }
