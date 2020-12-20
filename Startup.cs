@@ -30,7 +30,7 @@ namespace SharpCodeWebsite
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddAuthentication()
@@ -39,6 +39,7 @@ namespace SharpCodeWebsite
                     options.ClientId = "745902294708-g4on8lk43p49baqc8a6tpf02n9ijekev.apps.googleusercontent.com";
                     options.ClientSecret = "1wOfnwCJAajA795PEjdyVh5c";
                 });
+            
             services.AddRazorPages();
         }
 

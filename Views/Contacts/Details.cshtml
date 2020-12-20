@@ -1,0 +1,58 @@
+﻿@model SharpCodeWebsite.Models.Contact
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="container">
+    <h1>Details</h1>
+
+    <div>
+        <h4>Contact</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.FullName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.FullName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.PhoneNumber)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Message)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Message)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+        $('document').ready(function () {
+
+            
+            //.trigger("change");
+            document.body.style.background = '#fff';
+            //div.style.backgroundColor = '#00326D';
+            //div1.style.backgroundColor = 'white';
+            //div.style.marginTop = '-14px';
+        });
+    </script>
+}

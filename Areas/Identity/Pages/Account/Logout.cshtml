@@ -3,8 +3,21 @@
 @{
     ViewData["Title"] = "Log out";
 }
-
-<header>
-    <h1>@ViewData["Title"]</h1>
-    <p>You have successfully logged out of the application.</p>
-</header>
+<div class="container">
+    <header>
+        <h1>@ViewData["Title"]</h1>
+        <p>You have successfully logged out of the application.</p>
+    </header>
+</div>
+@section Scripts {
+    <script>
+        $('document').ready(function () {
+            //var div1 = document.getElementById('services-body');
+            //var div = document.getElementById('first-column');
+            document.body.style.background = '#fff';
+            //div.style.backgroundColor = '#00326D';
+            //div1.style.backgroundColor = 'white';
+            //div.style.marginTop = '-14px';
+        });
+    </script>
+}

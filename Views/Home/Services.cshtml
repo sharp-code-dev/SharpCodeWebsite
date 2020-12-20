@@ -6,18 +6,20 @@
 }
 <div class="row" id="service-body-page">
    
-    <div class="col" id="first-column">
+    <div class ="col" id="first-column">
+        @*Remove col class from the div up*@
         <div class="container">
             <div class="row">
                 <div class="col" id="heading-free">
-                    <h1 class="heading-free">Free HTML <span id="and"> and</span> CSS Traing</h1>
+                    <h1 class="heading-free">Free HTML <span id="and"> and</span> CSS Trainingg</h1>
                     @*<p class="color-change">Start writing responsive web application <span class="color-change2">for free</span></p>*@
                     <p class="para1"><span class="color-change">As a team of well trained <span class="color-change2">professional software developers</span></span><br /><span class="color-change"> we provide our</span> <span class="color-change2">fresh intakes HMTL and CSS</span><br /> <span class="color-change">free for two weeks</span></p>
+                    <button class="btn-1 force-to-happen" id="btn-11"><span class="btn-3">Register</span></button>
                 </div>
                 <div class="col">
                     <img src="~/lib/img/webphoto1.png" id="img-logo2" />
                 </div>
-                <button class="btn-1" id="btn-11"><span class="btn-3">Register</span></button>
+                @*<button class="btn-1 btn-pattern" id="btn-11"><span class="btn-3">Work With Us</span></button>*@
             </div>
 
         </div>
@@ -28,19 +30,20 @@
                     <h1 class="heading-free">Custom <br /> Software <span id="and"><br /> Development <br /></span> Services</h1>
                     @*<p class="color-change">Start writing responsive web application <span class="color-change2">for free</span></p>*@
                     <p class="para1"><span class="color-change">Our web developers dedicate themselves <br />to the highest quality engineering.<br /><span class="color-change2">C#, Javascript frameworks, .Net, HTML, <br />CSS and React,and beyond. </span></p>
+                    <button class="btn-1 btn-pattern" id="btn-11"><span class="btn-3">Work With Us</span></button>
                 </div>
                 <div class="col">
                     <img src="~/lib/img/web-dev.png" id="img-logo3" />
                 </div>
-                <button class="btn-1 btn-pattern" id="btn-11"><span class="btn-3">Work With Us</span></button>
+                @*<button class="btn-1 btn-pattern" id="btn-11"><span class="btn-3">Work With Us</span></button>*@
             </div>
 
         </div>
         <hr id="line" />
 
     </div>
-
-    <div class="col" id="services-body">
+    <div class="container">
+    <div id="services-body">
         <div id="container-size">
        
         @*<p id="paragraph-body">White color here</p>*@
@@ -62,7 +65,10 @@
                             <h4>Front-End</h4>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
-                                <a class="" asp-area="" asp-controller="Home" asp-action="Front">Read more</a>
+                                <div class="stage">
+                                    <a class="hello" asp-area="" asp-controller="Home" asp-action="Front">Read more</a>
+                                </div>
+
                             </p>
                         </div>
                     </div>
@@ -74,7 +80,9 @@
                             <h4>Full-Stack</h4>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
-                                <a class = "" asp-area="" asp-controller="Home" asp-action="Course">Read more</a>
+                            <div class="stage">
+                                <a class="hello" asp-area="" asp-controller="Home" asp-action="Course">Read more</a>
+                            </div>
                             </p>
                         </div>
                     </div>
@@ -86,7 +94,9 @@
                             <h4>Mobile & WPF</h4>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
-                                <a class="" asp-area="" asp-controller="Home" asp-action="Mobile">Read more</a>
+                                <div class="stage">
+                                <a class="hello" asp-area="" asp-controller="Home" asp-action="Mobile">Read more</a>
+                                </div>
                             </p>
                         </div>
                     </div>
@@ -98,6 +108,9 @@
                             <h4>Software Solution</h4>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                <div class="stage">
+                                    <a class="hello" asp-area="" asp-controller="Contacts" asp-action="Create">Read more</a>
+                                </div>
                             </p>
                         </div>
                     </div>
@@ -109,7 +122,10 @@
                             <h4>Software Update</h4>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                
+                                <div class="stage">
+                                    <a class="hello" asp-area="" asp-controller="Contacts" asp-action="Create">Read more</a>
+                                </div>
+
                             </p>
                             
                         </div>
@@ -122,6 +138,9 @@
                             <h4>24/7 Support</h4>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                <div class="stage">
+                                    <a class="hello" asp-area="" asp-controller="Contacts" asp-action="Create">Read more</a>
+                                </div>
                             </p>
                         </div>
                     </div>
@@ -133,6 +152,7 @@
         
            
      </div>
+            </div>
 
 </div>
 @section Scripts
@@ -142,6 +162,7 @@
             var div1 = document.getElementById('services-body');
             var div = document.getElementById('first-column');
             document.body.style.background = '#fff';
+            
             div.style.backgroundColor = '#00326D';
             div1.style.backgroundColor = 'white';
             div.style.marginTop = '-14px';

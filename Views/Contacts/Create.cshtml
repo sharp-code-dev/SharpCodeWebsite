@@ -1,0 +1,128 @@
+﻿@model SharpCodeWebsite.Models.Contact
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="container">
+
+    <p class="support-text">Please get in touch and our expert support <br /> team will answer all your questions</p>
+    <div class="row">
+        <div class="col">
+          
+            <div class="container">
+                @*<h1>Create</h1>
+                    <h4>Contact</h4>*@
+                @*<hr />*@
+                <div class="row">
+                    <div class="col-md-4">
+                        <form asp-action="Create">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                <label asp-for="FullName" class="control-label"></label>
+                                <input asp-for="FullName" class="input-size" />
+                                <span asp-validation-for="FullName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="PhoneNumber" class="control-label"></label>
+                                <input asp-for="PhoneNumber" class="input-size" />
+                                @*<input asp-for="PhoneNumber" class="form-control input-size" />*@
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Email" class="control-label"></label>
+                                <input asp-for="Email" class="input-size" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Message" class="control-label"></label>
+                                <input asp-for="Message" class="input-size" id="message-size" />
+                                <span asp-validation-for="Message" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Send" class="send-message" id="hello" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                @{
+                    if (User.IsInRole("Admin"))
+                    {
+                        <div>
+                            <a asp-action="Index">Back to List</a>
+                        </div>
+                    }
+                }
+
+            </div>
+        </div>
+        <div class="col">
+            <img src="~/lib/img/success-image.jpg" id="contact-image" alt="contact_img" />
+            <p class="contact-email"><i class="fa fa-envelope" aria-hidden="true"></i>: sharpcodedev@gmail.com</p>
+            <p class="contact-number"><i class="fa fa-phone" aria-hidden="true"></i>: +2348069344619, +2347067347928</p>
+        </div>
+    </div>
+</div>
+<!-- SOCIAL PANEL HTML -->
+<div class="social-panel-container">
+    <div class="social-panel">
+        <p>
+            Created with <i class="fa fa-code"></i> by
+            <a target="_blank" href="https://sharpcodedev.com">Sharp Code</a>
+        </p>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <h4>Get in touch on</h4>
+        <ul>
+            <li>
+                <a href="" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<button class="floating-btn">
+    Get in Touch
+</button>
+
+<div class="floating-text">
+    <a href="" target="_blank">SharpCode Contact</a>
+</div>
+
+
+
+
+@section Scripts
+{
+    <script>
+        $('document').ready(function () {
+
+            $(".input-size").change(function () {
+              
+                $(this).css("border", "2px solid #98F5FF");
+                $(this).css("height", "40px");
+               
+            }).trigger("change");
+            //.trigger("change");
+            document.body.style.background = '#fff';
+            //div.style.backgroundColor = '#00326D';
+            //div1.style.backgroundColor = 'white';
+            //div.style.marginTop = '-14px';
+        });
+    </script>
+}
+

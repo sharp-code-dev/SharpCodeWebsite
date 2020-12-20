@@ -84,14 +84,20 @@ html {
   min-height: 100%;
 }
 /*Aligining Nav Elements*/
-#text-color, #text-color1, #text-color2, #text-color3, #text-color4, #text-color5, #text-color6{
+#text-color, #text-color1, #text-color2, #text-color3, #text-color5, #text-color6, #text-color8{
     color: #98F5FF;
-    font-size: 15px;
-    padding-left: 15px;
+    font-size: 13px;
+    padding-left: 10px;
     margin-top: 10px;
     letter-spacing: 2px;
     font-weight: bolder;
     text-transform: uppercase;
+}
+#text-color9 {
+    color: #98F5FF;
+    font-size: 12px;
+    padding-left: 15px;
+    margin-top: 10px;
 }
 #text-color6 {
     padding-left: 30px;
@@ -255,6 +261,7 @@ html {
 #img-logo3 {
     width: 300px;
     margin-top: 90px;
+   /* margin-left: 30px;*/
 }
 #showcase-image {
     margin-top: 70px;
@@ -2404,9 +2411,9 @@ background-color: #292929;
     left: 35%;
     transform: rotateZ(-50deg);
 }
-#align-me {
-    text-align: center;
-    font-size: 35px;
-}
+/*styling input for contact*/
+
+
+
 
 
