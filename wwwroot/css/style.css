@@ -181,10 +181,80 @@
     font-weight: 500;
 }
 .force-class{
-    position: absolute!important;
-    bottom: 300px;
+    width: 120px!important;
+    letter-spacing: 0;
+}
+.force-class:hover {
+    letter-spacing: 0.2em!important;
+    background-color: #fff!important;
+    color: #00326D!important;
+    border: 2px solid #00326D!important;
 }
 #cont {
     margin-top: 50px;
     margin-left: 550px;
+    
+    margin-right: 550px;
 }
+
+.login-header {
+   text-align: center;
+   color: rgb(255, 166, 77);
+   margin-bottom: 50px;
+}
+.google-sign-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.google-service {
+    margin-top: -320px;
+}
+.force-class2 {
+    width: 120px !important;
+    letter-spacing: 0;
+    /*margin-left: 50px !important;*/
+    
+}
+.force-class2:hover {
+    letter-spacing: 0.2em !important;
+    background-color: #fff !important;
+    color: #00326D !important;
+    border: 2px solid #00326D !important;
+}
+.force-class3 {
+    width: 150px !important;
+    letter-spacing: 0;
+    /*margin-left: 50px !important;*/
+}
+
+.force-class3:hover {
+    letter-spacing: 0.2em !important;
+    background-color: #fff !important;
+    color: #00326D !important;
+    border: 2px solid #00326D !important;
+}
+.login-row {
+    margin-top: 50px;
+    border-radius: 30px;
+}
+.left-side {
+    background-color: #ffffe5;
+}
+.right-side {
+    background-image: url('/lib/img/Bg-image.jpg');
+   /* background-color: #1B3F8B;*/
+}
+.section, .section2 {
+    padding: 40px;
+    margin-top: 70px;
+    line-height: 50px;
+}
+.login-account {
+    color: #fff;
+    text-align: center;
+}
+/*Registration-Contanier*/
+
+
+
