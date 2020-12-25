@@ -40,7 +40,7 @@ a{
 html {
   font-size: 14px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   html {
     font-size: 16px;
   }
@@ -83,8 +83,11 @@ html {
   position: relative;
   min-height: 100%;
 }
+.toggle-color {
+   border-color: #98F5FF!important;
+}
 /*Aligining Nav Elements*/
-#text-color, #text-color1, #text-color2, #text-color3, #text-color5, #text-color6, #text-color8{
+#text-color, #text-color1, #text-color2, #text-color3, #text-color5, #text-color6, #text-color8 {
     color: #98F5FF;
     font-size: 13px;
     padding-left: 10px;
@@ -259,9 +262,9 @@ html {
     margin-top: 50px;
 }
 #img-logo3 {
-    width: 300px;
+    width: 400px;
     margin-top: 90px;
-   /* margin-left: 30px;*/
+    margin-left: 60px;
 }
 #showcase-image {
     margin-top: 70px;
@@ -411,7 +414,9 @@ ul {
    /* background-color: #f9f9f9;*/
    background-color: #fff;
 }
-
+/*.equal-height {
+    height: 450px!important;
+}*/
 .site-heading h2 {
     display: block;
     font-weight: 700;
@@ -2411,9 +2416,82 @@ background-color: #292929;
     left: 35%;
     transform: rotateZ(-50deg);
 }
+.left-side-showcase, .front-end-animation, .full-stack-amimation, .mobile-animation, .service-right-text, .contact-left-animate, .slideRight {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.order-image, .service-left-text, .slideLeft, .contact-right-animate {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
 /*styling input for contact*/
+/*html {
+    font-size: 14px;
+}*/
+/*@media screen and (min-width: 768px) {
+    .social-buttons {
+        display: flex;
+        flex-direction: column;*/
+/*position: absolute;
+        justify-content: center;*/
+/*}
 
+    .showcase-image {
+        order: 3;
+    }
+}*/
+#showcase-image1 {
+    display: flex;
+}
+@media screen and (max-width: 1024px) {
+    .social-buttons {
+        display: flex;
+        flex-direction: column;
+    }
 
+    #showcase-image {
+        flex-direction: column;
+    }
+
+    .order-image {
+        order: 2;
+    }
+    .image-size {
+        width: 400px;
+    }
+    .left-side-showcase{
+        margin-left: 50px;
+    }
+    .partial-view {
+        display: none;
+        margin-right: 30px;
+    }
+    .left-side, .right-side {
+        width: 0 auto;
+    }
+    .input-size {
+        width: auto;
+    }
+    .hello{
+        width: auto;
+    }
+}
 
 
 

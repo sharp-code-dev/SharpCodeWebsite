@@ -2,8 +2,8 @@
     ViewData["Title"] = "Home Page";
 }
 <div class="container">
-    <div class="row">
-        <div class="col-6">
+    <div class="row" id="showcase-image">
+        <div class="col-6 left-side-showcase">
             <div class="showcase-text">
                 <h1 class="showcase-heading">Hello<span class="exclamation-mark">!</span></h1>
                 <h2 class="showcase-subheading">We will help you build<br /> a better career</h2>
@@ -12,8 +12,8 @@
           
             <a class="btn-1" asp-area="" asp-controller="Registrations" asp-action="Create" id="apply"><span class="btn-2">Join</span></a>
         </div>
-    <div class="col-6">
-            <img src="/lib/img/showcase-img.png" alt="showcase-image" id="showcase-image"/>
+    <div class="col-6 order-image">
+            <img src="/lib/img/showcase-img.png" alt="showcase-image" id="showcase-image" class="image-size"/>
     </div>
     </div>
 </div>

@@ -94,8 +94,11 @@
 /*Contact number sytle*/
 
 .stage {
-    padding: 40px;
+    /*padding: 40px;*/
     text-align: center;
+    margin: 0;
+    padding: 0;
+
 }
 
 .stage-class {
@@ -135,20 +138,21 @@
 }
 .hello:hover {
     text-transform: uppercase;
-    background-color: #98F5FF;
+    /*background-color: #98F5FF;*/
+    background-color: #fff;
 }
 
 .hello {
-    color: white;
+   
 }
 
 .hello {
     /* height: 3em;*/
-   
-    width: 80%;
+    
+    color: white;
     padding: 0.5em;
     margin: 1em auto;
-    background-color: #98F5FF;
+    /*background-color: #98F5FF;*/
     border: none;
     border-radius: 3px;
     /* text-transform: uppercase;
@@ -237,6 +241,7 @@
 .login-row {
     margin-top: 50px;
     border-radius: 30px;
+    display: flex;
 }
 .left-side {
     background-color: #ffffe5;
@@ -254,7 +259,14 @@
     color: #fff;
     text-align: center;
 }
-/*Registration-Contanier*/
+/*Front-End-Body*/
+.front-body-text {
+    text-align: justify;
+}
+/*Contact Page*/
+.contact-left-animate {
+    margin-top: 50px!important;
+}
 
 
 
