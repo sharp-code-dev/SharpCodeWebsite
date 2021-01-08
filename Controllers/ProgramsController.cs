@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,27 +10,22 @@ using SharpCodeWebsite.Models;
 
 namespace SharpCodeWebsite.Controllers
 {
-    public class RegistrationsController : Controller
+    public class ProgramsController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly UserManager<ApplicationDbContext> userManager;
 
-        public RegistrationsController(ApplicationDbContext context, RoleManager<IdentityRole> roleManager)
+        public ProgramsController(ApplicationDbContext context)
         {
             _context = context;
-            _roleManager = roleManager;
         }
 
-        // GET: Registrations
-        [Authorize(Roles = "Admin")]
+        // GET: Programs
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Registration.Include(p=>p.Program).ToListAsync());
+            return View(await _context.Programs.ToListAsync());
         }
 
-        // GET: Registrations/Details/5
-        [Authorize(Roles = "Admin")]
+        // GET: Programs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -40,50 +33,39 @@ namespace SharpCodeWebsite.Controllers
                 return NotFound();
             }
 
-            var registration = await _context.Registration
+            var programs = await _context.Programs
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (registration == null)
+            if (programs == null)
             {
                 return NotFound();
             }
 
-            return View(registration);
+            return View(programs);
         }
 
-        // GET: Registrations/Create
+        // GET: Programs/Create
         public IActionResult Create()
         {
-            ViewBag.Programs = new SelectList(_context.Programs, "Id", "Name");
-            return View();
-        }
-        public IActionResult Success()
-        {
-            return View();
-        }
-        public IActionResult Contact()
-        {
             return View();
         }
 
-        // POST: Registrations/Create
+        // POST: Programs/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create( Registration registration)
+        public async Task<IActionResult> Create( Programs programs)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(registration);
+                _context.Add(programs);
                 await _context.SaveChangesAsync();
-                //return RedirectToAction(nameof(Index));
-                return View("Success");
+                return RedirectToAction(nameof(Index));
             }
-            return View(registration);
+            return View(programs);
         }
 
-        // GET: Registrations/Edit/5
-        [Authorize(Roles = "Admin")]
+        // GET: Programs/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -91,23 +73,22 @@ namespace SharpCodeWebsite.Controllers
                 return NotFound();
             }
 
-            var registration = await _context.Registration.FindAsync(id);
-            if (registration == null)
+            var programs = await _context.Programs.FindAsync(id);
+            if (programs == null)
             {
                 return NotFound();
             }
-            return View(registration);
+            return View(programs);
         }
 
-        // POST: Registrations/Edit/5
+        // POST: Programs/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,Email,MobilePhone,Program")] Registration registration)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] Programs programs)
         {
-            if (id != registration.Id)
+            if (id != programs.Id)
             {
                 return NotFound();
             }
@@ -116,12 +97,12 @@ namespace SharpCodeWebsite.Controllers
             {
                 try
                 {
-                    _context.Update(registration);
+                    _context.Update(programs);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!RegistrationExists(registration.Id))
+                    if (!ProgramsExists(programs.Id))
                     {
                         return NotFound();
                     }
@@ -132,11 +113,10 @@ namespace SharpCodeWebsite.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(registration);
+            return View(programs);
         }
 
-        // GET: Registrations/Delete/5
-        [Authorize(Roles = "Admin")]
+        // GET: Programs/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -144,30 +124,30 @@ namespace SharpCodeWebsite.Controllers
                 return NotFound();
             }
 
-            var registration = await _context.Registration
+            var programs = await _context.Programs
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (registration == null)
+            if (programs == null)
             {
                 return NotFound();
             }
 
-            return View(registration);
+            return View(programs);
         }
 
-        // POST: Registrations/Delete/5
+        // POST: Programs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var registration = await _context.Registration.FindAsync(id);
-            _context.Registration.Remove(registration);
+            var programs = await _context.Programs.FindAsync(id);
+            _context.Programs.Remove(programs);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool RegistrationExists(int id)
+        private bool ProgramsExists(int id)
         {
-            return _context.Registration.Any(e => e.Id == id);
+            return _context.Programs.Any(e => e.Id == id);
         }
     }
 }

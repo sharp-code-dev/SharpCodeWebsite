@@ -15,5 +15,6 @@ namespace SharpCodeWebsite.Data
         }
         public DbSet<SharpCodeWebsite.Models.Registration> Registration { get; set; }
         public DbSet<SharpCodeWebsite.Models.Contact> Contact { get; set; }
+        public DbSet<SharpCodeWebsite.Models.Programs> Programs { get; set; }
     }
 }

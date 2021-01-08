@@ -9,6 +9,7 @@ namespace SharpCodeWebsite.Models
     public class Registration
     {
         public int Id { get; set; }
+        public int ProgramsId { get; set; }
         [Display(Name = "First Name*")]
         [Required(ErrorMessage = "The first name is required")]
         public string FirstName { get; set; }
@@ -28,7 +29,7 @@ namespace SharpCodeWebsite.Models
        
        
        
-        public string Program { get; set; }
+        public Programs Program { get; set; }
 
 
     }
