@@ -2472,24 +2472,38 @@ background-color: #292929;
     .order-image {
         order: 2;
     }
+
     .image-size {
         width: 400px;
     }
-    .left-side-showcase{
+
+    .left-side-showcase {
         margin-left: 50px;
     }
+
     .partial-view {
         display: none;
         margin-right: 30px;
     }
+
     .left-side, .right-side {
         width: 0 auto;
     }
+
     .input-size {
         width: auto;
     }
-    .hello{
+
+    .hello {
         width: auto;
+    }
+    .reg-image {
+        margin-right: 100px;
+    }
+
+    .imge {
+        margin-right: 20px;
+        width: 20px;
     }
 }
 
