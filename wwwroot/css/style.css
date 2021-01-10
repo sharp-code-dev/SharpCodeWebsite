@@ -143,10 +143,6 @@
 }
 
 .hello {
-   
-}
-
-.hello {
     /* height: 3em;*/
     
     color: white;
@@ -277,6 +273,32 @@
 .break {
     height: 15px;
 }
+#helllo:hover {
+    letter-spacing: 0.8em;
+    background-color: #fff;
+    color: #00326D;
+    border: 2px solid #00326D;
+}
+
+#helllo {
+    color: white;
+}
+
+#helllo {
+    height: 3em;
+    width: 80%;
+    padding: 0.5em;
+    margin: 1em 0 0 3em;
+    background-color: #00326D;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    transition: all 0.2s cubic-bezier(.4,0,.2,1);
+    border-radius: 50px;
+    border-color: #00326D;
+}
+
 @media screen and (max-width: 1024px) {
     .reg-image {
         margin-right: 400px;
@@ -299,6 +321,22 @@
     }
     .nav-elements {
         margin-right: 40px;
+    }
+    #container-course {
+        margin-left: 0;
+    }
+    .progress {
+       /*margin-top: -20px;*/
+       visibility: hidden;
+    }
+    .progress-container {
+        margin-top: -20px;
+    }
+    .progress-text {
+        margin-top: -30px!important;
+    }
+    #helllo {
+        margin-left: 0;
     }
 }
 
