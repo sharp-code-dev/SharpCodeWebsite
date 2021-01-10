@@ -348,7 +348,22 @@
     #align-me {
         font-size: 23px;
     }
-}
+    .bg-color {
+        margin-left: -20px;
+        
+    }
+    .social-buttons {
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-elements {
+        margin-bottom: -250px;
+    }
+    .testim {
+        margin-top: -310px;
+    }
+ }
 
 
 
