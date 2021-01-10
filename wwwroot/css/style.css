@@ -274,6 +274,9 @@
     margin-left: 20px;
     width: 620px;
 }
+.break {
+    height: 15px;
+}
 @media screen and (max-width: 1024px) {
     .reg-image {
         margin-right: 400px;
@@ -290,6 +293,12 @@
     }
     #contact-image{
         width: 450px;
+    }
+    .toggle-style{
+        margin-right: 20px;
+    }
+    .nav-elements {
+        margin-right: 40px;
     }
 }
 
