@@ -38,7 +38,8 @@
     </div>
     <div>
         <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-        <a asp-action="Index">Back to List</a>
+        @*<a asp-action="Index">Back to List</a>*@
+        <a class="text-info" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
     </div>
 </div>
 

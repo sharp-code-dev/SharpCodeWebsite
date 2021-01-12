@@ -302,7 +302,7 @@
     margin-top: 20px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 360px) {
     .reg-image {
         margin-right: 400px;
     }
@@ -364,6 +364,369 @@
         margin-top: -310px;
     }
  }
+@media(max-width:1190px) {
+    .nav-elements {
+        margin-left: -220px!important;
+    }
+    .social-buttons {
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-elements {
+        margin-bottom: -270px;
+    }
+    .left-side-showcase {
+        margin-top: -100px;
+    }
+    #container-course {
+        margin-left: -40px;
+    }
+    /*started*/
+    .course-preview {
+        width: 170px !important;
+    }
+
+    #helllo {
+        margin-left: 0px;
+    }
+
+    .btn1 {
+        margin-bottom: 10px;
+    }
+
+    .input-size {
+        width: 320px;
+    }
+
+    #contact-image {
+        width: 320px;
+    }
+
+    #img-logo2 {
+        margin-left: 18px;
+        width: 320px;
+    }
+
+    #img-logo3 {
+        margin-left: 18px;
+        margin-top: -20px;
+        width: 320px;
+    }
+
+    #btn-11 {
+        margin-left: -10px !important;
+    }
+
+    #showcase-image {
+        width: 320px;
+        margin-left: 10px;
+    }
+
+    .reg-image {
+        margin-left: -40px;
+    }
+
+    .imge {
+        width: 320px;
+    }
+   
+   
+}
+@media(max-width:970px) {
+    .nav-elements {
+        margin-left: -220px !important;
+    }
+    .social-buttons {
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-elements {
+        margin-bottom: -270px!important;
+    }
+    .left-side-showcase {
+        margin-top: -100px;
+    }
+    #container-course {
+        margin-left: -40px;
+    }
+    /*started*/
+    .course-preview {
+        width: 170px !important;
+    }
+
+    #helllo {
+        margin-left: 0px;
+    }
+
+    .btn1 {
+        margin-bottom: 10px;
+    }
+
+    .input-size {
+        width: 320px;
+    }
+
+    #contact-image {
+        width: 320px;
+    }
+
+    #img-logo2 {
+        margin-left: 18px;
+        width: 320px;
+    }
+
+    #img-logo3 {
+        margin-left: 18px;
+        margin-top: -20px;
+        width: 320px;
+    }
+
+    #btn-11 {
+        margin-left: -10px !important;
+    }
+
+    #showcase-image {
+        width: 320px;
+        margin-left: 10px;
+    }
+
+    .reg-image {
+        margin-left: -40px;
+    }
+
+    .imge {
+        width: 320px;
+    }
+   
+  
+}
+@media(max-width:900px) {
+    .nav-elements {
+        margin-left: -220px !important;
+    }
+    .social-buttons {
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-elements {
+        margin-bottom: -270px!important;
+    }
+    .left-side-showcase {
+        margin-top: -100px;
+    }
+    #container-course {
+        margin-left: -40px;
+    }
+    /*started*/
+    .course-preview {
+        width: 170px !important;
+    }
+
+    #helllo {
+        margin-left: 0px;
+    }
+
+    .btn1 {
+        margin-bottom: 10px;
+    }
+
+    .input-size {
+        width: 320px;
+    }
+
+    #contact-image {
+        width: 320px;
+    }
+
+    #img-logo2 {
+        margin-left: 18px;
+        width: 320px;
+    }
+
+    #img-logo3 {
+        margin-left: 18px;
+        margin-top: -20px;
+        width: 320px;
+    }
+
+    #btn-11 {
+        margin-left: -10px !important;
+    }
+
+    #showcase-image {
+        width: 320px;
+        margin-left: 10px;
+    }
+
+    .reg-image {
+        margin-left: -40px;
+    }
+
+    .imge {
+        width: 320px;
+    }
+   
+    
+}
+@media(max-width:600px) {
+    .navbar {
+        width: 650px !important;
+        margin-left: 10px!important;
+    }
+    .navbar-toggler {
+        margin-left: -200px!important;
+    }
+    .title-heading {
+        margin-left: -10px;
+    }
+    .registration-align {
+        width: 650px;
+    }
+    .nav-elements {
+       
+    }
+    #apply {
+        margin-left: -20px!important;
+    }
+    .social-buttons {
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-link {
+        margin-left: 270px;
+        margin-bottom: 20px
+    }
+    .left-side-showcase {
+        margin-top: -100px;
+    }
+    #container-course {
+        margin-left: -40px;
+    }
+    /*started*/
+    .course-preview {
+        width: 170px !important;
+    }
+
+    #helllo {
+        margin-left: 0px;
+    }
+
+    .btn1 {
+        margin-bottom: 10px;
+    }
+
+    .input-size {
+        width: 450px!important;
+        margin-left: 18px;
+    }
+
+    #contact-image {
+        width: 650px;
+    }
+
+    #img-logo2 {
+        margin-left: 18px;
+        width: 320px;
+    }
+
+    #img-logo3 {
+        margin-left: 18px;
+        margin-top: -20px;
+        width: 320px;
+    }
+
+    #btn-11 {
+        margin-left: -10px !important;
+    }
+
+    #showcase-image {
+        width: 420px;
+        margin-left: 10px;
+        margin-left: -10px !important;
+    }
+
+    .reg-image {
+        margin-left: 40px!important;
+    }
+
+    .imge {
+        width: 600px!important;
+    }
+    .showcase-text {
+        width: 400px!important;
+        margin-right: 0px!important;
+    }
+    
+       
+   
+} 
+@media(max-width:480px) {
+    .nav-elements {
+        margin-left: -220px !important;
+    }
+    .social-buttons {
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+   /* .nav-elements {
+        margin-bottom: -270px!important;
+    }*/
+    .left-side-showcase {
+        margin-top: -100px;
+    }
+    #container-course {
+        margin-left: -40px;
+        margin-top: -20px;
+    }
+    .course-preview {
+        width: 170px!important;
+    }
+    #helllo {
+        margin-left: 0px;
+        
+        
+    }
+    .btn1 {
+        margin-bottom: 10px;
+    }
+    .input-size {
+        width: 320px;
+    }
+    #contact-image{
+        width: 320px;
+    }
+    #img-logo2 {
+        margin-left: 18px;
+        width: 320px;
+    }
+    #img-logo3 {
+        margin-left: 18px;
+        margin-top: -20px;
+        width: 320px;
+    }
+    #btn-11 {
+        margin-left: -10px!important;
+    }
+    #showcase-image {
+        width: 320px;
+        margin-left: 10px;
+    }
+    .reg-image {
+        margin-left: -40px;
+        
+    }
+    .imge {
+        width: 320px;
+       
+    }
+   
+
+}
 
 
 

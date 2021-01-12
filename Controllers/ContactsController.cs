@@ -60,7 +60,7 @@ namespace SharpCodeWebsite.Controllers
             {
                 _context.Add(contact);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Details), new { id=contact.Id});
             }
             return View(contact);
         }
@@ -111,7 +111,8 @@ namespace SharpCodeWebsite.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Success", "Registrations");
+                //return View("Success");
             }
             return View(contact);
         }
