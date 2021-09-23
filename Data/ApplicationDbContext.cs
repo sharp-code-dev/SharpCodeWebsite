@@ -13,6 +13,12 @@ namespace SharpCodeWebsite.Data
             : base(options)
         {
         }
+<<<<<<< HEAD
         public DbSet<Registration> Registration { get; set; }
+=======
+        public DbSet<SharpCodeWebsite.Models.Registration> Registration { get; set; }
+        public DbSet<SharpCodeWebsite.Models.Contact> Contact { get; set; }
+        public DbSet<SharpCodeWebsite.Models.Programs> Programs { get; set; }
+>>>>>>> 249614fde37484fe9d71fc5e79a67090753c7cf9
     }
 }

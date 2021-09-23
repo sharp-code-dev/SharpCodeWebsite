@@ -47,6 +47,7 @@ namespace SharpCodeWebsite.Controllers
         {
             return View();
         }
+        
         public IActionResult All()
         {
             return View();

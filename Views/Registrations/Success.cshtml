@@ -1,6 +1,7 @@
 ﻿
+<p class="text-center font-weight-bold text-uppercase" id="align-me">Successfully Registered!</p>
 <div class="container-success" id="align-success">
-    @*<p class="text-center font-weight-bold text-uppercase" id="align-me">Success!</p>*@
+    
     <div class="circle-border"></div>
     <div class="circle">
         <div class="success"></div>
@@ -12,12 +13,13 @@
 {
     <script>
         $('document').ready(function () {
-            //var div1 = document.getElementById('services-body');
-            //var div = document.getElementById('first-column');
             document.body.style.background = '#fff';
-            //div.style.backgroundColor = '#00326D';
-            //div1.style.backgroundColor = 'white';
-            //div.style.marginTop = '-14px';
+            $(function () {
+                setTimeout(function () {
+                    window.location.replace("https://localhost:44358/");
+                }, 5000);
+            });
+            
         });
     </script>
 }

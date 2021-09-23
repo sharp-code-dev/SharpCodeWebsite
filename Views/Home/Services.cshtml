@@ -6,41 +6,44 @@
 }
 <div class="row" id="service-body-page">
    
-    <div class="col" id="first-column">
+    <div class ="col" id="first-column">
+        @*Remove col class from the div up*@
         <div class="container">
             <div class="row">
-                <div class="col" id="heading-free">
-                    <h1 class="heading-free">Free HTML <span id="and"> and</span> CSS Traing</h1>
+                <div class="col service-right-text" id="heading-free">
+                    <h1 class="heading-free">Free HTML <span id="and"> and</span> CSS Training</h1>
                     @*<p class="color-change">Start writing responsive web application <span class="color-change2">for free</span></p>*@
-                    <p class="para1"><span class="color-change">As a team of well trained <span class="color-change2">professional software developers</span></span><br /><span class="color-change"> we provide our</span> <span class="color-change2">fresh intakes HMTL and CSS</span><br /> <span class="color-change">free for two weeks</span></p>
+                    <p class="para1"><span class="color-change">As a team of well trained <span class="color-change2">professional software developers</span></span><br /><span class="color-change"> we provide our</span> <span class="color-change2">fresh intakes with HMTL and CSS</span><br /> <span class="color-change">free training for two weeks</span></p>
+                    <button class="btn-1 force-to-happen" id="btn-11"><span class="btn-3">Register</span></button>
                 </div>
-                <div class="col">
+                <div class="col service-left-text">
                     <img src="~/lib/img/webphoto1.png" id="img-logo2" />
                 </div>
-                <button class="btn-1" id="btn-11"><span class="btn-3">Register</span></button>
+                @*<button class="btn-1 btn-pattern" id="btn-11"><span class="btn-3">Work With Us</span></button>*@
             </div>
 
         </div>
         <hr id="line" />
         <div class="container">
             <div class="row">
-                <div class="col" id="heading-free">
-                    <h1 class="heading-free">Custom <br /> Software <span id="and"><br /> Development <br /></span> Services</h1>
+                <div class="col service-right-animate" id="heading-free">
+                    <h1 class="heading-free">Custom Software <span id="and"><br /> Development <br /></span> Services</h1>
                     @*<p class="color-change">Start writing responsive web application <span class="color-change2">for free</span></p>*@
                     <p class="para1"><span class="color-change">Our web developers dedicate themselves <br />to the highest quality engineering.<br /><span class="color-change2">C#, Javascript frameworks, .Net, HTML, <br />CSS and React,and beyond. </span></p>
+                    <button class="btn-1 btn-pattern" id="btn-11"><span class="btn-3">Work With Us</span></button>
                 </div>
-                <div class="col">
+                <div class="col service-left-animate">
                     <img src="~/lib/img/web-dev.png" id="img-logo3" />
                 </div>
-                <button class="btn-1 btn-pattern" id="btn-11"><span class="btn-3">Work With Us</span></button>
+                @*<button class="btn-1 btn-pattern" id="btn-11"><span class="btn-3">Work With Us</span></button>*@
             </div>
 
         </div>
         <hr id="line" />
 
     </div>
-
-    <div class="col" id="services-body">
+    <div class="container">
+    <div id="services-body">
         <div id="container-size">
        
         @*<p id="paragraph-body">White color here</p>*@
@@ -50,7 +53,7 @@
                     <div class="col-md-12">
                         <div class="site-heading text-center">
                             <h2>What we <span>Offer</span></h2>
-                            <h4>Lorem Ipsum is simply dummy text</h4>
+                            <h4>Is SharpCode Worth It?</h4>
                         </div>
                     </div>
                 </div>
@@ -61,78 +64,105 @@
                             <i class="fas fa-code"></i>
                             <h4>Front-End</h4>
                             <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
-                                <a class="" asp-area="" asp-controller="Home" asp-action="Front">Read more</a>
+                                Designed for tech enthusiasts who wants to  
+                                familiarize themselves with fundamentals of developing efficient and robust 
+                                technologies to alleviate business problems. <br />
+                                <div class="stage">
+                                    <a class="hello" asp-area="" asp-controller="Home" asp-action="Front">More</a>
+                                </div>
+
                             </p>
                         </div>
                     </div>
                     <!-- End Single Item -->
                     <!-- Single Item -->
                     <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <i class="fas fa-laptop-code"></i>
-                            <h4>Full-Stack</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
-                                <a class = "" asp-area="" asp-controller="Home" asp-action="Course">Read more</a>
-                            </p>
+                        @*<div class="col-md-4 col-sm-6 equal-height">*@
+                            <div class="item">
+                                <i class="fas fa-laptop-code"></i>
+                                <h4>Full-Stack</h4>
+                                <p>
+                                    Designed for upcoming full-stack web developers to grow their programming skills in both front-end and back-end
+                                    web development.
+                                    <br />
+                                    <div class="stage">
+                                        <a class="hello" asp-area="" asp-controller="Home" asp-action="Course">More</a>
+                                    </div>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <i class="fa fa-mobile"></i>
-                            <h4>Mobile & WPF</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br />
-                                <a class="" asp-area="" asp-controller="Home" asp-action="Mobile">Read more</a>
-                            </p>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 equal-height">
+                            <div class="item">
+                                <i class="fa fa-mobile"></i>
+                                <h4>Mobile & WPF</h4>
+                                <p>
+                                    This training is designed to empower begineers to start creating applications specific to 
+                                    mobile devices, including tablets and smart watches.<br />
+                                    <div class="stage">
+                                        <a class="hello" asp-area="" asp-controller="Home" asp-action="Mobile">More</a>
+                                    </div>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <i class="fas fa-tachometer-alt"></i>
-                            <h4>Software Solution</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </p>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 equal-height">
+                            <div class="item">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <h4>Software Solution</h4>
+                                <p>
+                                    We offer a comprehensive set of custom software development services
+                                    to help you grow your business and reach your business goals which offers the best possible experience to users.
+                                    <div class="stage">
+                                        <a class="hello" asp-area="" asp-controller="Contacts" asp-action="Create">Contact Us</a>
+                                    </div>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <i class="fas fa-recycle"></i>
-                            <h4>Software Update</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                
-                            </p>
-                            
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="item">
+                                <i class="fas fa-recycle"></i>
+                                <h4>Software Update</h4>
+                                <p>
+                                    We can also improve the stability of your software, and remove outdated features.
+                                    All of these updates are aimed at making the user experience better and efficient.
+                                    <div class="stage">
+                                        <a class="hello" asp-area="" asp-controller="Contacts" asp-action="Create">Contact Us</a>
+                                    </div>
+
+                                </p>
+
+                            </div>
                         </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <i class="fas fa-headset"></i>
-                            <h4>24/7 Support</h4>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </p>
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-md-4 col-sm-6 equal-height">
+                            <div class="item">
+                                <i class="fas fa-headset"></i>
+                                <h4>24/7 Support</h4>
+                                <p>
+                                    Our development teams have the expertise to support whenever it is needed on a variety of
+                                    technology platforms. We build assist you build products that are functional, scalable and secure.
+
+                                    <div class="stage">
+                                        <a class="hello" asp-area="" asp-controller="Contacts" asp-action="Create">Read more</a>
+                                    </div>
+                                </p>
+                            </div>
                         </div>
+                        <!-- End Single Item -->
                     </div>
-                    <!-- End Single Item -->
-                </div>
             </div>
         </section>
     <div>
         
            
      </div>
+            </div>
 
 </div>
 @section Scripts
@@ -142,9 +172,35 @@
             var div1 = document.getElementById('services-body');
             var div = document.getElementById('first-column');
             document.body.style.background = '#fff';
+            
             div.style.backgroundColor = '#00326D';
             div1.style.backgroundColor = 'white';
             div.style.marginTop = '-14px';
+
+            $(window).scroll(function () {
+                $('.service-right-animate').each(function () {
+                    var imagePos = $(this).offset().top;
+                    var imageHeight = $(this).height();
+                    var topOfWindow = $(window).scrollTop();
+
+                    if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+                        $(this).addClass("slideRight");
+                    } else {
+                        $(this).removeClass("slideRight");
+                    }
+                });
+                $('.service-left-animate').each(function () {
+                    var imagePos = $(this).offset().top;
+                    var imageHeight = $(this).height();
+                    var topOfWindow = $(window).scrollTop();
+
+                    if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+                        $(this).addClass("slideLeft");
+                    } else {
+                        $(this).removeClass("slideLeft");
+                    }
+                });
+            });
         });
     </script>
 }

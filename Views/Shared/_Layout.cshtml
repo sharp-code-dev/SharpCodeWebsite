@@ -1,19 +1,25 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using SharpCodeWebsite.Models
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SharpCodeWebsite</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="~/css/style.css" />
-    
+    <link rel="stylesheet" href="~/css/site.css?v=17" />
+    <link rel="stylesheet" href="~/css/style.css?v=3" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-color box-shadow mb-3">
+<<<<<<< HEAD
             <div class="container">
                 <a class="navbar-brand" asp-area="" id="text-color4" asp-controller="Home" asp-action="Index"><img src ="/lib/img/logo2.png" id="img-logo"/></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
@@ -32,22 +38,58 @@
                         <li class="nav-item">
                             <a class="nav-link" id="text-color2" asp-area="" asp-controller="Home" asp-action="Services">Service</a>
                         </li>
+=======
+            @*<div class="container">*@
+            <a class="navbar-brand" asp-area="" id="text-color4" asp-controller="Home" asp-action="Index"><span class="logo-design">Sharp<span class="awesome"><i class="fa fa-code" aria-hidden="true"></i></span>Code</span></a>
+            @*<a class="navbar-brand" asp-area="" id="text-color4" asp-controller="Home" asp-action="Index"><img src="/lib/img/logo2.png" id="img-logo" /></a>*@
+            <button class="navbar-toggler toggle-color toggle-style" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#98F5FF; font-size:28px;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                @*<partial name="_LoginPartial" />*@
+                <ul class="navbar-nav flex-grow-1 nav-elements">
+                    <li class="nav-item">
+                        <a class="nav-link text-mycolor" id="text-color" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="text-color1" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="text-color2" asp-area="" asp-controller="Home" asp-action="Services">Service</a>
+                    </li>
+
+                    @{ if (User.IsInRole("Admin")){
+>>>>>>> 249614fde37484fe9d71fc5e79a67090753c7cf9
                         <li class="nav-item">
-                            <a class="nav-link" id="text-color3" asp-area="" asp-controller="Registrations" asp-action="Success">Contact</a>
+                            <a class="nav-link" id="text-color8" asp-area="" asp-controller="Registrations" asp-action="Index">Table</a>
                         </li>
-                        <li class=" nav-item social-buttons">
-                            <a href="#"><i class="fab fa-facebook nav-link"></i></a>
-                            <a href="#"><i class="fab fa-twitter nav-link"></i></a>
-                            <a href="#"><i class="fab fa-instagram nav-link"></i></a>
+                       }
+                       }
 
-                            <a href="https://www.linkedin.com/in/mere-daniel-05503a174/"><i class="fab fa-linkedin-in nav-link"></i></a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="text-color3" asp-area="" asp-controller="Contacts" asp-action="Create">Contact</a>
+                    </li>
+                    <li class=" nav-item social-buttons">
+                        <a href="#"><i class="fab fa-facebook nav-link"></i></a>
+                        <a href="#"><i class="fab fa-twitter nav-link"></i></a>
+                        <a href="#"><i class="fab fa-instagram nav-link"></i></a>
+
+                        <a href="https://www.linkedin.com/in/mere-daniel-05503a174/"><i class="fab fa-linkedin-in nav-link"></i></a>
+                    </li>
+                    <li class="partial-view">
                         <partial name="_LoginPartial" />
-                    </ul>
+                    </li>
+                          
+                </ul>
 
+<<<<<<< HEAD
                 </div>
                 </div>
             
+=======
+            </div>
+            @*</div>*@
+>>>>>>> 249614fde37484fe9d71fc5e79a67090753c7cf9
         </nav>
     </header>
     <div>
@@ -57,10 +99,10 @@
     </div>
 
     @*<footer class="footer text-muted">
-        <div class="container">
-            &copy; 2020 - SharpCode - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>*@
+            <div class="container">
+                &copy; 2020 - SharpCode - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>*@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

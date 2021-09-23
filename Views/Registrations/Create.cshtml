@@ -1,80 +1,119 @@
-﻿@model SharpCodeWebsite.Models.Registration
+﻿@*@using Microsoft.AspNetCore.Identity
+    @using SharpCodeWebsite.Models
 
-@{
-    ViewData["Title"] = "Create";
+    @inject SignInManager<IdentityUser> SignInManager
+    @inject UserManager<IdentityUser> UserManager*@
+@model SharpCodeWebsite.Models.Registration
+
+@{ ViewData["Title"] = "Create"; }
+<div class="container registration-align">
+    <h1 class="title-heading">SharpCode Program Registration</h1>
+
+    @*<h4>Registration</h4>*@
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="FirstName" class="control-label label-class"></label>
+                    <input asp-for="FirstName" class="form-control input-size" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LastName" class="control-label label-class"></label>
+                    <input asp-for="LastName" class="form-control input-size" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label label-class"></label>
+                    <input asp-for="Email" class="form-control input-size" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="MobilePhone" class="control-label label-class"></label>
+                    <input asp-for="MobilePhone" class="form-control input-size" />
+                    <span asp-validation-for="MobilePhone" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Program" class="control-label label-class"></label><br />
+                    <select asp-for="ProgramsId" class="control-label label-class input-size" asp-items="@ViewBag.Programs"></select>
+                    <span asp-validation-for="Program" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Register" class="btn10" />
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4 responsive-img">
+            <div class="reg-image">
+                <img src ="/lib/img/registatn-img.jpg" alt="Registration-image" class="imge"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+@{ if (User.IsInRole("Admin"))
+    {
+    <div class="container">
+        <a asp-action="Index">Back to List</a>
+    </div> } 
 }
-<div class="container">
-<h1>SharpCode Program Registration</h1>
-
-@*<h4>Registration</h4>*@
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="FirstName" class="control-label"></label>
-                <input asp-for="FirstName" class="form-control" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="LastName" class="control-label"></label>
-                <input asp-for="LastName" class="form-control" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Age" class="control-label"></label>
-                <input asp-for="Age" class="form-control" />
-                <span asp-validation-for="Age" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BirthDate" class="control-label"></label>
-                <input asp-for="BirthDate" class="form-control" />
-                <span asp-validation-for="BirthDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MobilePhone" class="control-label"></label>
-                <input asp-for="MobilePhone" class="form-control" />
-                <span asp-validation-for="MobilePhone" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="State" class="control-label"></label>
-                <input asp-for="State" class="form-control" />
-                <span asp-validation-for="State" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Country" class="control-label"></label>
-                <input asp-for="Country" class="form-control" />
-                <span asp-validation-for="Country" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Program" class="control-label"></label>
-                <input asp-for="Program" class="form-control" />
-                <span asp-validation-for="Program" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn10" />
-            </div>
-        </form>
+<!-- SOCIAL PANEL HTML -->
+<div class="social-panel-container">
+    <div class="social-panel">
+        <p>
+            Created with <i class="fa fa-code"></i> by
+            <a target="_blank" href="https://sharpcodedev.com">Sharp Code</a>
+        </p>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <h4>Get in touch on</h4>
+        <ul>
+            <li>
+                <a href="" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
-    </div>
+<button class="floating-btn">
+    Get in Touch
+</button>
 
-<div class="container">
-    <a asp-action="Index">Back to List</a>
+<div class="floating-text">
+    <a href="" target="_blank">SharpCode Application</a>
 </div>
+
 
 @section Scripts
 {
     <script>
         $('document').ready(function () {
-            //var div1 = document.getElementById('services-body');
-            //var div = document.getElementById('first-column');
+            $(".input-size").change(function () {
+
+                $(this).css("border", "2px solid #98F5FF");
+                $(this).css("height", "40px");
+
+            }).trigger("change");
             document.body.style.background = '#fff';
             //div.style.backgroundColor = '#00326D';
             //div1.style.backgroundColor = 'white';
